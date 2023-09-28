@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contacts Us</title>
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Devrious web developer team">
+  <meta name="keywords" content="Devrious">
+  <meta name="author" content="Devrious">
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <link rel="mask-icon" color="#6366f1" href="../assets/favicon/safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#080032">
+  <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="white">
+  <!-- Theme mode-->
+  <script>
+    let mode = window.localStorage.getItem('mode'),
+      root = document.getElementsByTagName('html')[0];
+    if (mode !== undefined && mode === 'dark') {
+      root.classList.add('dark-mode');
+    } else {
+      root.classList.remove('dark-mode');
+    }
+  </script>
+  <!-- Page loading styles-->
+  <style>
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .dark-mode .page-loading {
+      background-color: #121519;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #6f788b;
+    }
+
+    .dark-mode .page-loading-inner>span {
+      color: #fff;
+      opacity: .6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      background-color: #d7dde2;
+      border-radius: 50%;
+      opacity: 0;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    .dark-mode .page-spinner {
+      background-color: rgba(255, 255, 255, .25);
+    }
+
+    @-webkit-keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+  </style>
+  <!-- Page loading scripts-->
+  <script>
+    (function() {
+      window.onload = function() {
+        const preloader = document.querySelector('.page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function() {
+          preloader.remove();
+        }, 1500);
+      };
+    })();
+  </script>
+  <!-- Import Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" id="google-font">
+  <!-- Vendor styles-->
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+</head>
+<!-- Body-->
+
+<body>
+  <!-- Page loading spinner-->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div><span>Loading...</span>
+    </div>
+  </div>
+  <!-- Page wrapper-->
+  <main class="page-wrapper">
+    <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+    <header class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <span class="text-primary flex-shrink-0 me-2">
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve">
+              <g>
+                <g id="g10" transform="matrix(0.239044 0 0 -0.250059 79.4692 584.115)">
+                  <g id="g14">
+                    <g id="g16">
+                      <path fill-rule="evenodd" fill="#ff5c5c" d="m-272.73115,2264.47118l0,44.0022l17.1624,0l0,-35.4212c0,-4.7197 -3.8614,-8.581 -8.581,-8.581l-8.5814,0z" id="path18" />
+                      <path fill-rule="evenodd" fill="#0bb57c" d="m-255.56875,2295.76308l-44.5833,0c-4.0255,0 -7.3814,-3.3559 -7.3814,-7.3814l0,-16.5294c0,-4.0255 3.3556,-7.3811 7.3814,-7.3811l27.4209,0l0,-17.1624l-27.4209,0c-13.4989,0 -24.5438,11.0447 -24.5438,24.5435l0,16.5294c0,13.4992 11.0446,24.5438 24.5438,24.5438l44.5833,0l0,-17.1624z" id="path20" />
+                      <path fill-rule="evenodd" fill="#ffd900" d="m-272.73115,2312.92548l17.1624,0l0,17.1623l-8.581,0c-4.7197,0 -8.5814,-3.8616 -8.5814,-8.5813l0,-8.581z" id="path22" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+          Devrious
+        </a>
+        <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+          <input type="checkbox" class="form-check-input" id="theme-mode">
+          <label for="theme-mode" class="form-check-label">
+            <i class="ai-sun fs-lg"></i>
+          </label>
+          <label for="theme-mode" class="form-check-label">
+            <i class="ai-moon fs-lg"></i>
+          </label>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="tel:+94755746933" class="btn btn-outline-primary btn-sm fs-sm order-lg-3 d-none d-lg-inline-flex">
+          <i class="ai-login me-2 ms-n1"></i>
+          Call Us
+        </a>
+        <nav class="collapse navbar-collapse" id="navbarCollapse2">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/services" class="nav-link">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item active">
+              <a href="/contact" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <a href="tel:+94755746933" class="btn btn-outline-primary btn-sm fs-sm d-lg-none ms-3 mb-4 mb-lg-0">
+            <i class="ai-login me-2 ms-n1"></i>
+            Call Us
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Page content-->
+    <!-- Contact details-->
+    <section class="bg-secondary pt-5 mb-0 pb-0">
+      <div class="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5">
+        <!-- Breadcrumb-->
+        <nav aria-label="breadcrumb">
+          <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacts Us</li>
+          </ol>
+        </nav>
+        <!-- Page title-->
+        <h1 class="display-2">Contacts</h1>
+        <p class="fs-lg pb-4 mb-2 mb-sm-3">Get in touch with us by completing the below form or call us now</p>
+        <!-- Details cards-->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4 pb-2 pb-sm-4 pb-lg-5">
+          <!-- Address-->
+          <div class="col">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Address</h4>
+                <p class="fs-lg fw-medium pb-3 mb-3">Jayapura, Pannipitiya, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+          <!-- Phone-->
+          <div class="col">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Phone</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="pb-1 mb-2"><span class="d-block fs-sm text-muted mb-1">Main office</span><a class="nav-link fs-lg p-0" href="tel:+94755746933">+94 75 574 6933</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Schedule-->
+          <div class="col">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Schedule</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="pb-1 mb-2"><span class="d-block fs-sm text-muted mb-1">Mon - Thu</span>
+                    <div class="d-flex align-items-center"><span class="text-nav fs-lg fw-medium">10:00</span><span class="border-top mx-4" style="width: 36px; height: 1px;"></span><span class="text-nav fs-lg fw-medium">22:00</span></div>
+                  </li>
+                  <li><span class="d-block fs-sm text-muted mb-1">Fri - Sun</span>
+                    <div class="d-flex align-items-center"><span class="text-nav fs-lg fw-medium">10:00</span><span class="border-top mx-4" style="width: 36px; height: 1px;"></span><span class="text-nav fs-lg fw-medium">20:00</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Email-->
+          <div class="col">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Email</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="pb-1 mb-2"><span class="d-block fs-sm text-muted mb-1">Main office</span><a class="nav-link fs-lg p-0" href="mailto:info@devriousteam.lk">info@devriousteam.lk</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height: 175px;"></div>
+      <footer class="footer bg-dark position-relative py-4 py-md-5">
+        <div class="dark-mode container position-relative zindex-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5">
+          <div class="row py-md-3 mb-4 mb-md-5">
+            <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
+              <h2 class="display-4 mb-4 mb-md-5">Let's start building brand together</h2>
+              <div class="d-sm-flex align-items-center"><a class="btn btn-lg btn-primary me-sm-3 me-lg-4" href="/contact">Let's work together</a>
+                <p class="fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Team members will contact you to discuss the project and give you the best solution</p>
+              </div>
+            </div>
+            <div class="col-md-5 offset-lg-1 offset-xxl-2 d-flex flex-column">
+              <div class="nav mx-n2 mx-lg-n4 mb-2 mb-sm-3"><a class="nav-link text-primary px-2 px-lg-4" href="mailto:info@devriousteam.lk">info@devriousteam.lk</a></div>
+              <div class="nav flex-column mb-3 mb-sm-4"><a class="nav-link py-1 px-0" href="tel:+94755746933">+ 94 75 574 6944</a>
+                <p class="mt-4">We are web development team who are specialized in creating web based products with eye catching UI.Our only goal is make customer 100% satisfied.We belive best way to get marketed is doing our work devotedly.</p>
+              </div>
+            </div>
+          </div>
+          <p class="fs-sm pt-3 pb-2 pb-lg-0 mb-0 text-center"><span class="opacity-70">Made by Devrious</span></p>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+    <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+    </svg><i class="ai-arrow-up"></i></a>
+  <!-- Vendor scripts: js libraries and plugins-->
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <!-- Main theme script-->
+  <script src="../assets/js/theme.min.js"></script>
+</body>
+
+</html>
