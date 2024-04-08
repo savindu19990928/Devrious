@@ -13,9 +13,9 @@ app.get('/contact', function (req, res) {
   res.sendFile(__dirname + '/assets/contacts-v1.html');
 });
 
-app.get('/projects', function (req, res) {
-  res.sendFile(__dirname + '/assets/portfolio.html');
-});
+// app.get('/projects', function (req, res) {
+//   res.sendFile(__dirname + '/assets/portfolio.html');
+// });
 
 app.get('/services', function (req, res) {
   res.sendFile(__dirname + '/assets/services-v3.html');
