@@ -20,6 +20,10 @@ app.get('/services', function (req, res) {
   res.sendFile(__dirname + '/assets/services-v3.html');
 });
 
+app.get('/sitemap', function (req, res) {
+  res.sendFile(__dirname + '/assets/sitemap.xml');
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/assets/index.html'));
 });
