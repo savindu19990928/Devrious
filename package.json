@@ -9,7 +9,9 @@
   "author": "Savindu",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "nodemailer": "^7.0.3",
     "path": "^0.12.7"
   }
 }
