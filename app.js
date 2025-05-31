@@ -19,22 +19,6 @@ const transporter = nodemailer.createTransport({
 
 app.use('/assets', express.static('assets'));
 
-app.get('/about', function (req, res) {
-  res.sendFile(__dirname + '/assets/about-agency.html');
-});
-
-app.get('/contact', function (req, res) {
-  res.sendFile(__dirname + '/assets/contacts-v1.html');
-});
-
-app.get('/projects', function (req, res) {
-  res.sendFile(__dirname + '/assets/portfolio.html');
-});
-
-app.get('/services', function (req, res) {
-  res.sendFile(__dirname + '/assets/services-v3.html');
-});
-
 app.post("/sendmail", async (req, res) => {
   const { name, email, phone, service, message } = req.body;
 
