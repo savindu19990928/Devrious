@@ -49,11 +49,6 @@ app.get('/sitemap', function (req, res) {
   res.sendFile(__dirname + '/assets/sitemap.xml');
 });
 
-app.get('/robots.txt', (req, res) => {
-  const filePath = path.join(__dirname, 'robots.txt');
-  res.sendFile(filePath);
-});
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/assets/index.html'));
 });
