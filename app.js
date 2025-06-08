@@ -3,7 +3,9 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const cors = require("cors");
 const app = express();
+const compression = require('compression');
 
+app.use(compression());
 app.use(cors());
 app.use(express.json());
 
